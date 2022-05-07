@@ -1,7 +1,13 @@
-const UTest = require('../index.js');
+import unit from '../index.js';
 
-const Tester = new UTest();
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b - 1;
 
-Tester.assert("add", 1 + 2, 2, "1 + 1 should be 2");
+const test = new unit();
 
-Tester.printResultsDetailed();
+const assert = test.assert;
+
+assert("addition", add(1, 2) === 3, "3 is the expected result");
+assert("subtraction", subtract(1, 2) === -1, "1 is the expected result");
+
+test.printResults(true);

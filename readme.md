@@ -3,14 +3,25 @@ The easy unit test!
 
 ## quickstart
 ```javascript
-    const UTest = require('easy-unit.js');
+    
+    // import
+    import unit from 'easy-unit.js';
 
-    // initialize new tester
-    const Tester = new UTest();
+    // define functions we want to test
+    const add = (a, b) => a + b;
+    const subtract = (a, b) => a - b - 1;
     
-    // test
-    Tester.assert("add", 1 + 2, 2, "1 + 1 should be 2");
+    // initialize tester
+    const test = new unit();
     
-    // print results combined
-    Tester.printResultsDetailed();
+    // rescope assert in form of new function
+    const assert = test.assert;
+    
+    // assert both functions - see how one fails
+    assert("addition", add(1, 2) === 3, "3 is the expected result");
+    assert("subtraction", subtract(1, 2) === -1, "1 is the expected result");
+    
+    // print the result
+    test.printResults(true);
+
 ```

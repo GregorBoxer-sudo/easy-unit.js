@@ -1,8 +1,9 @@
 {
     "name": "easy-unit.js",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "easy unit testing",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "test": "node test/test"
     },
@@ -23,6 +24,7 @@
     },
     "homepage": "https://github.com/GregorBoxer-sudo/easy-unit.js#readme",
     "dependencies": {
-        "colors": "^1.4.0"
+        "chalk": "^5.0.1",
+        "log-symbols": "^5.1.0"
     }
 }
