@@ -1,0 +1,28 @@
+{
+    "name": "easy-unit.js",
+    "version": "1.0.0",
+    "description": "easy unit testing",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test/test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GregorBoxer-sudo/easy-unit.js.git"
+    },
+    "keywords": [
+        "unit",
+        "unitTesting",
+        "testing",
+        "easy"
+    ],
+    "author": "Gregor Katzschner",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/GregorBoxer-sudo/easy-unit.js/issues"
+    },
+    "homepage": "https://github.com/GregorBoxer-sudo/easy-unit.js#readme",
+    "dependencies": {
+        "colors": "^1.4.0"
+    }
+}
